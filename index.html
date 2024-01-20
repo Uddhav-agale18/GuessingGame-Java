@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Guessing Game</h1>
+    </header>
+
+    <main>
+        <form onsubmit="checkGuess(); return false;">
+            <p>Try to guess the number between 1 and 100:</p>
+            <input type="number" id="userGuess" placeholder="Enter your guess">
+            <br>
+            <button type="submit">Submit Guess</button>
+        </form>
+        <p id="feedback"></p>
+        <p id="attempts"></p>
+    </main>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+
+</html>
